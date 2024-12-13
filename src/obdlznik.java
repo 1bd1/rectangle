@@ -1,18 +1,17 @@
 public class obdlznik {
 
 
-    public static void main(String[] args)
-
-    {
+    public static void main(String[] args) {
 
 // pouzite jednotky - cm
 
-double stranaA = 100.50;
-double stranaB = 200.30;
+
+        double stranaA = 100.50;
+        double stranaB = 200.30;
 
 
-     double obvodObdlzniku = vypocetObvoduObdlzniku(stranaA, stranaB);
-     double obsahObdlzniku = vypocetObsahuObdlzniku(stranaA, stranaB);
+        double obvodObdlzniku = vypocetObvoduObdlzniku(stranaA, stranaB);
+        double obsahObdlzniku = vypocetObsahuObdlzniku(stranaA, stranaB);
 
         long obvodObdlzniku2 = vypocetObvoduObdlzniku(50, 70);
         long obsahObdlzniku2 = vypocetObsahuObdlzniku(50, 70);
@@ -28,8 +27,6 @@ double stranaB = 200.30;
         System.out.println(Math.round(obvodObdlzniku2));
 
 
-
-
         System.out.print("obsah obdlznika so stranami (cm): ");
         System.out.print(stranaA);
         System.out.print(" x ");
@@ -40,34 +37,28 @@ double stranaB = 200.30;
         System.out.println(Math.round(obsahObdlzniku2));
     }
 
+
     // prve volanie metody
 
-    public static double vypocetObvoduObdlzniku(double stranaA, double stranaB)
-    {
-        return (2*(stranaA+stranaB));
+    public static double vypocetObvoduObdlzniku(double stranaA, double stranaB) {
+        return (2 * (stranaA + stranaB));
     }
 
 
-    public static double vypocetObsahuObdlzniku(double stranaA, double stranaB)
-    {
-        return (stranaA*stranaB);
+    public static double vypocetObsahuObdlzniku(double stranaA, double stranaB) {
+        return (stranaA * stranaB);
     }
 
 
-    //pretazenie
+    //pretazenie metody
 
-    public static long vypocetObvoduObdlzniku(long stranaA, long stranaB)
-    {
-
-
-
-               return (2*(stranaA+stranaB));
+    public static long vypocetObvoduObdlzniku(long stranaA, long stranaB) {
+        return (2 * (stranaA + stranaB));
     }
 
 
-    public static long vypocetObsahuObdlzniku(long stranaA, long stranaB)
-    {
-        return (stranaA*stranaB);
+    public static long vypocetObsahuObdlzniku(long stranaA, long stranaB) {
+        return (stranaA * stranaB);
     }
 
 
